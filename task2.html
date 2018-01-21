@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+h1
+{
+text-align :center;
+}
+</style>
+</head>
+<script>
+var num = 10;
+function CreatePopUp()
+{
+alert(num);
+}
+
+function incrementNumber()
+{
+num = num + 1;
+document.getElementById("header").innerHTML = num;
+}
+
+function displayNumber()
+{
+var newParagraph = document.createElement("P");
+newParagraph.style.fontSize = "30px";
+var text = document.createTextNode(num);
+newParagraph.appendChild(text);
+document.body.appendChild(newParagraph);
+
+}
+</script>
+<body>
+<h1 id="header">10</h1>
+<Button id="btn1" onClick="CreatePopUp()">Display Number</Button>
+<Button id="btn2" onClick="incrementNumber()">Increment Number</Button>
+<Button id="btn3" onClick="displayNumber()">Display number on page</Button>
+</body>
+
+</html>
+
