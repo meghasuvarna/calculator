@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Task 3
+	</title>
 <style>
 table {
 border-collapse: collapse;
-
+width: 180px;
 }
 
 
@@ -16,7 +20,6 @@ border: 1px solid black;
 
 tr:nth-child(even) {background-color: #f3f3f3;}
 </style>
-</head>
 <script>
 function displayLoremIpsem()
 {
@@ -26,7 +29,7 @@ document.getElementById("loreipsemright").innerHTML = "<p>In publishing and grap
 
 function display99Bottles()
 {
-document.getElementById("loreipsemright").innerHTML = "<p>99 bottles of beer on the wall, 99 bottles of beer.<br/>Take one down, pass it around, 98 bottles of beer on the wall...</p>" + "<p>No more bottles of beer on the wall, no more bottles of beer.<br/>Go to the store and buy some more, 99 bottles of beer on the wall...</p>" + "<p>No more bottles of beer on the wall, no more bottles of beer.<br/>We've taken them down and passed them around; now we're drunk and passed out!</p>" + "<p>If that one bottle should happen to fall, what a waste of alcohol!</p>";
+document.getElementById("loreipsemright").innerHTML = "<p>99 bottles of beer on the wall, 99 bottles of beer.<br>Take one down, pass it around, 98 bottles of beer on the wall...</p>" + "<p>No more bottles of beer on the wall, no more bottles of beer.<br>Go to the store and buy some more, 99 bottles of beer on the wall...</p>" + "<p>No more bottles of beer on the wall, no more bottles of beer.<br>We've taken them down and passed them around; now we're drunk and passed out!</p>" + "<p>If that one bottle should happen to fall, what a waste of alcohol!</p>";
 
 }
 
@@ -36,14 +39,16 @@ document.getElementById("loreipsemright").innerHTML = "this is the third thing";
 
 }
 </script>
+</head>
+
 <body>
 
 <div>
-<center style="font-size: 20px;"><b>HW02 Task Three</b></center>
+<div style="font-size: 20px;text-align: center"><b>HW02 Task Three</b></div>
 <br/>
 <br/>
 <div style="float:left;width: 33.33%">
-<table width="180px">
+<table>
 <tr>
 <td id="loreipsemleft"> <a href="#" onClick = "displayLoremIpsem()">Lorem Ipsem</a></td>
 </tr>
